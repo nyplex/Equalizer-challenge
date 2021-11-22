@@ -18,3 +18,67 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.bg-pattern-top {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    width: 312px;
+    z-index: -1;
+    @media screen and(max-width:768px) {
+        width: 231px;
+        top: -32px;
+    }
+}
+
+header {
+    max-width: 1110px;
+    margin-left: 165px;
+    margin-top: 62px;
+    margin-bottom: 321px;
+    @media screen and(max-width: 768px) {
+        max-width: 696px;
+        margin-left: 39px;
+        margin-bottom: 111px;
+    }
+    img {
+        width: 146px;
+        margin-bottom: 127px;
+        @media screen and(max-width: 768px) {
+            margin-bottom: 95px;
+        }
+    }
+    p {
+        font-family: $imb;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        color: $black;
+        margin-top: 0;
+        max-width: 825px;
+        @media screen and(max-width: 768px) {
+            font-size: 18px;
+            line-height: 28px;
+            max-width: 514px;
+        }
+    }
+}
+
+h1 {
+    font-family: $imb;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    color: $black;
+    margin-top: 0;
+    margin-bottom: 40px;
+    max-width: 1015px;
+    @media screen and(max-width: 768px) {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.73px;
+        margin-bottom: 28px;
+        max-width: 520px;
+    }
+}
