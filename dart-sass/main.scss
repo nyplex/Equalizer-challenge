@@ -1,6 +1,7 @@
 /////////// Fonts ///////////
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
-$imb: 'IBM Plex Sans', sans-serif;
+$imb: 'IBM Plex Sans',
+sans-serif;
 
 /////////// Colors ///////////
 $blue: #66E2DC;
@@ -8,6 +9,33 @@ $orange: #FA7453;
 $yellow: #FFB964;
 $white: #FCFAF9;
 $black: #191826;
+
+/////////// Colors ///////////
+.btn {
+    width: 333px;
+    height: 61px;
+    border-radius: 12px;
+    border: none;
+    font-family: $imb;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    text-align: center;
+    margin-left: 54px;
+    margin-bottom: 16px;
+}
+
+.btn-blue {
+    background-color: $blue;
+    color: $white;
+}
+
+.btn-yellow {
+    background-color: $yellow;
+    color: $black;
+    margin-bottom: 48px;
+}
 
 /////////// Body ///////////
 body {
@@ -19,6 +47,7 @@ body {
     background-size: cover;
 }
 
+/////////// Header ///////////
 header {
     display: flex;
 }
@@ -28,13 +57,16 @@ header {
     margin-left: auto;
     padding-top: 62px;
     padding-left: 40px;
+
     @media screen and(max-width: 768px) {
         padding-left: 24px;
         padding-right: 24px;
     }
+
     img {
         width: 146px;
     }
+
     h1 {
         font-family: $imb;
         font-weight: 700;
@@ -44,6 +76,7 @@ header {
         color: $black;
         margin-top: 127px;
         margin-bottom: 40px;
+
         @media screen and(max-width: 1060px) {
             margin-top: 95px;
             font-size: 64px;
@@ -51,6 +84,7 @@ header {
             letter-spacing: -0.73px;
             margin-bottom: 28px;
         }
+
         @media screen and(max-width: 640px) {
             margin-top: 64px;
             font-size: 40px;
@@ -59,6 +93,7 @@ header {
             margin-bottom: 20px;
         }
     }
+
     p {
         font-family: $imb;
         font-weight: 400;
@@ -67,10 +102,12 @@ header {
         color: $black;
         margin-top: 0;
         margin-bottom: 0;
+
         @media screen and(max-width: 1060px) {
             font-size: 18px;
             line-height: 28px;
         }
+
         @media screen and(max-width: 640px) {
             font-size: 16px;
             line-height: 26px;
@@ -84,19 +121,99 @@ header {
     margin-left: auto;
     position: relative;
     overflow: hidden;
+
     @media screen and(max-width: 1060px) {
         max-width: 266px;
     }
+
     @media screen and(max-width:768px) {
         display: none;
     }
+
     img {
         position: absolute;
         width: 100%;
         right: 0;
         top: -40px;
+
         @media screen and(max-width: 1060px) {
             top: -32px;
+        }
+    }
+}
+
+
+/////////// Main Content ///////////
+
+main {
+    max-width: 1110px;
+    margin: auto;
+    background-color: $black;
+    border-radius: 12px;
+    position: relative;
+    margin-top: 321px;
+    min-height: 600px;
+}
+
+.main-bg {
+    position: absolute;
+    top: -40px;
+    left: 336px;
+}
+
+.main-app {
+    max-width: 312px;
+    position: absolute;
+    top: -213px;
+    left: 102px;
+}
+
+.main-content {
+    max-width: 446px;
+    background-color: $orange;
+    border-radius: 12px;
+    position: absolute;
+    right: 95px;
+    top: 90px;
+    h2 {
+        font-family: $imb;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52px;
+        color: $white;
+        padding-left: 54px;
+        margin: 58px auto 22px auto;
+    }
+
+    p {
+        padding-left: 54px;
+        padding-right: 59px;
+        font-family: $imb;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        color: $white;
+        margin: 0 auto 39px auto;
+    }
+
+    h3 {
+        font-family: $imb;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 52px;
+        color: $white;
+        position: relative;
+        padding-left: 54px;
+        margin: 0 auto 46px auto;
+        span {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -0.2px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 16px;
         }
     }
 }

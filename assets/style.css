@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap");
+.btn {
+  width: 333px;
+  height: 61px;
+  border-radius: 12px;
+  border: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  text-align: center;
+  margin-left: 54px;
+  margin-bottom: 16px;
+}
+
+.btn-blue {
+  background-color: #66E2DC;
+  color: #FCFAF9;
+}
+
+.btn-yellow {
+  background-color: #FFB964;
+  color: #191826;
+  margin-bottom: 48px;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -104,6 +130,77 @@ header {
   .right-header img {
     top: -32px;
   }
+}
+
+main {
+  max-width: 1110px;
+  margin: auto;
+  background-color: #191826;
+  border-radius: 12px;
+  position: relative;
+  margin-top: 321px;
+  min-height: 600px;
+}
+
+.main-bg {
+  position: absolute;
+  top: -40px;
+  left: 336px;
+}
+
+.main-app {
+  max-width: 312px;
+  position: absolute;
+  top: -213px;
+  left: 102px;
+}
+
+.main-content {
+  max-width: 446px;
+  background-color: #FA7453;
+  border-radius: 12px;
+  position: absolute;
+  right: 95px;
+  top: 90px;
+}
+.main-content h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #FCFAF9;
+  padding-left: 54px;
+  margin: 58px auto 22px auto;
+}
+.main-content p {
+  padding-left: 54px;
+  padding-right: 59px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #FCFAF9;
+  margin: 0 auto 39px auto;
+}
+.main-content h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 52px;
+  color: #FCFAF9;
+  position: relative;
+  padding-left: 54px;
+  margin: 0 auto 46px auto;
+}
+.main-content h3 span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
