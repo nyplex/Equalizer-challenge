@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap");
 .btn {
-  width: 333px;
+  max-width: 333px;
+  width: 100%;
   height: 61px;
   border-radius: 12px;
   border: none;
@@ -12,17 +13,34 @@
   text-align: center;
   margin-left: 54px;
   margin-bottom: 16px;
+  transition: all 0.2s;
+}
+@media screen and (max-width: 700px) {
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 95%;
+  }
 }
 
 .btn-blue {
-  background-color: #66E2DC;
+  background-color: #191826;
   color: #FCFAF9;
+}
+.btn-blue:hover {
+  background-color: #66E2DC;
+  cursor: pointer;
 }
 
 .btn-yellow {
-  background-color: #FFB964;
+  background-color: #FCFAF9;
   color: #191826;
   margin-bottom: 48px;
+}
+.btn-yellow:hover {
+  background-color: #FFB964;
+  cursor: pointer;
 }
 
 body {
@@ -141,11 +159,25 @@ main {
   margin-top: 321px;
   min-height: 600px;
 }
+@media screen and (max-width: 700px) {
+  main {
+    z-index: -1;
+  }
+}
 
 .main-bg {
   position: absolute;
   top: -40px;
   left: 336px;
+}
+@media screen and (max-width: 700px) {
+  .main-bg {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 384px;
+    width: 100%;
+  }
 }
 
 .main-app {
@@ -153,6 +185,13 @@ main {
   position: absolute;
   top: -213px;
   left: 102px;
+}
+@media screen and (max-width: 700px) {
+  .main-app {
+    top: -98px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .main-content {
@@ -163,6 +202,11 @@ main {
   right: 95px;
   top: 90px;
 }
+@media screen and (max-width: 700px) {
+  .main-content {
+    display: none;
+  }
+}
 .main-content h2 {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
@@ -171,6 +215,12 @@ main {
   color: #FCFAF9;
   padding-left: 54px;
   margin: 58px auto 22px auto;
+}
+@media screen and (max-width: 700px) {
+  .main-content h2 {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 .main-content p {
   padding-left: 54px;
@@ -182,6 +232,13 @@ main {
   color: #FCFAF9;
   margin: 0 auto 39px auto;
 }
+@media screen and (max-width: 700px) {
+  .main-content p {
+    padding-left: 54px;
+    padding-right: 54px;
+    text-align: center;
+  }
+}
 .main-content h3 {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
@@ -191,6 +248,12 @@ main {
   position: relative;
   padding-left: 54px;
   margin: 0 auto 46px auto;
+}
+@media screen and (max-width: 700px) {
+  .main-content h3 {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 .main-content h3 span {
   font-weight: 400;
@@ -203,8 +266,79 @@ main {
   margin-left: 16px;
 }
 
+.mobile-main-content {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .mobile-main-content {
+    margin-top: -20px;
+    display: inline-block;
+    position: static;
+    width: 100%;
+    max-width: 700px;
+    z-index: 1;
+  }
+}
+
 footer {
+  max-width: 1110px;
+  margin: auto;
   margin-top: 202px;
+  display: flex;
+  margin-bottom: 91px;
+}
+@media screen and (max-width: 700px) {
+  footer {
+    margin-top: 64px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 75px;
+  }
+}
+footer .logo-footer {
+  width: 146px;
+  height: 32px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 700px) {
+  footer .logo-footer {
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+footer p {
+  max-width: 366px;
+  margin: auto;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #191826;
+}
+footer p strong {
+  font-weight: 700;
+}
+@media screen and (max-width: 700px) {
+  footer p {
+    margin-bottom: 30px;
+  }
+}
+footer .social {
+  padding: 0 10px;
+  width: 100px;
+  min-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+footer .social i {
+  font-size: 25px;
+}
+footer .social i:hover {
+  cursor: pointer;
+  color: #FA7453;
 }
 
 /*# sourceMappingURL=style.css.map */
